@@ -16,7 +16,9 @@ namespace ZoomExample
         public MainWindow()
         {
             InitializeComponent();
-
+            System.Windows.Media.SolidColorBrush partiallyTransparentSolidColorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.Red);
+            partiallyTransparentSolidColorBrush.Opacity = 0.7;
+            scrollViewer.Background = partiallyTransparentSolidColorBrush;
             scrollViewer1.ScrollChanged += OnScrollViewerScrollChanged1;
             scrollViewer1.MouseLeftButtonUp += OnMouseLeftButtonUp1;
             scrollViewer1.PreviewMouseLeftButtonUp += OnMouseLeftButtonUp1;

@@ -11,3 +11,16 @@ C:\Users\Mac\Desktop\ZoomExample\obj\x86\Debug\ZoomExample.Properties.Resources.
 C:\Users\Mac\Desktop\ZoomExample\obj\x86\Debug\ZoomExample.csproj.GenerateResource.Cache
 C:\Users\Mac\Desktop\ZoomExample\obj\x86\Debug\ZoomExample.exe
 C:\Users\Mac\Desktop\ZoomExample\obj\x86\Debug\ZoomExample.pdb
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\ZoomExample.exe
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\ZoomExample.pdb
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\bin\Debug\ZoomExample.exe
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\bin\Debug\ZoomExample.pdb
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\ZoomExample.csprojResolveAssemblyReference.cache
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\MainWindow.baml
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\Resources.baml
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\App.g.cs
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\ZoomExample_MarkupCompile.cache
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\ZoomExample.g.resources
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\ZoomExample.Properties.Resources.resources
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\ZoomExample.csproj.GenerateResource.Cache
