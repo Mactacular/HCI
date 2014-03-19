@@ -1,0 +1,100 @@
+﻿<Window x:Class="ZoomExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="MainWindow" Height="798" Width="1024">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer Name="scrollViewer" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Hidden" Margin="-35,9,45,10">
+
+            <Grid Name="grid" Width="1024" Height="1896" RenderTransformOrigin="0.5,0.5">
+                <Grid.ColumnDefinitions>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.LayoutTransform>
+                    <TransformGroup>
+                        <ScaleTransform x:Name="scaleTransform"/>
+                    </TransformGroup>
+                </Grid.LayoutTransform>
+                <Viewbox Grid.Row="0" Margin="41,0,588,10">
+                    <StackPanel Height="711">
+                        <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
+                        <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
+                        <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
+                        <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
+                    </StackPanel>
+                </Viewbox>
+                <Viewbox Grid.Row="0" Margin="348,0,-348,-57">
+                    <StackPanel Height="640">
+                        <ScrollViewer x:Name="scrollViewer1" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="0,9,0,-9" Width="294" Height="160">
+
+                            <Grid x:Name="grid1" Width="680" Height="160" RenderTransformOrigin="0.5,0.5">
+                                <Grid.LayoutTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform x:Name="scaleTransform1"/>
+                                    </TransformGroup>
+                                </Grid.LayoutTransform>
+                                <Viewbox Grid.Column="0" Grid.Row="0">
+                                    <TextBlock Text="This is a test" Width="66"/>
+                                </Viewbox>
+                            </Grid>
+
+                        </ScrollViewer>
+                        <ScrollViewer x:Name="scrollViewer2" Grid.Column="1" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="0,9,0,-9" Width="294" Height="160">
+
+                            <Grid x:Name="grid2" Width="680" Height="160" RenderTransformOrigin="0.5,0.5">
+                                <Grid.LayoutTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform x:Name="scaleTransform2"/>
+                                    </TransformGroup>
+                                </Grid.LayoutTransform>
+                                <Viewbox Grid.Column="0" Grid.Row="0">
+                                    <TextBlock Text="This is a test" Width="66"/>
+                                </Viewbox>
+                            </Grid>
+
+                        </ScrollViewer>
+                        <ScrollViewer x:Name="scrollViewer3" Grid.Column="1" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="0,9,0,-9" Width="294" Height="160">
+
+                            <Grid x:Name="grid3" Width="680" Height="160" RenderTransformOrigin="0.5,0.5">
+                                <Grid.LayoutTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform x:Name="scaleTransform3"/>
+                                    </TransformGroup>
+                                </Grid.LayoutTransform>
+                                <Viewbox Grid.Column="0" Grid.Row="0">
+                                    <TextBlock Text="This is a test" Width="66"/>
+                                </Viewbox>
+                            </Grid>
+
+                        </ScrollViewer>
+                        <ScrollViewer x:Name="scrollViewer4" Grid.Column="1" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="0,9,0,-9" Width="294" Height="160">
+
+                            <Grid x:Name="grid4" Width="680" Height="160" RenderTransformOrigin="0.5,0.5">
+                                <Grid.LayoutTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform x:Name="scaleTransform4"/>
+                                    </TransformGroup>
+                                </Grid.LayoutTransform>
+                                <Viewbox Grid.Column="0" Grid.Row="0">
+                                    <TextBlock Text="This is a test" Width="66"/>
+                                </Viewbox>
+                            </Grid>
+
+                        </ScrollViewer>
+
+                    </StackPanel>
+                </Viewbox>
+            </Grid>
+
+        </ScrollViewer>
+    </Grid>
+</Window>
