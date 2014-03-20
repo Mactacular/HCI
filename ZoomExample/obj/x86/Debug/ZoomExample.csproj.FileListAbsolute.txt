@@ -24,3 +24,18 @@ C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\ZoomExample_Ma
 C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\ZoomExample.g.resources
 C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\ZoomExample.Properties.Resources.resources
 C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\ZoomExample.csproj.GenerateResource.Cache
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\bin\Debug\ZoomExample.exe
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\bin\Debug\ZoomExample.pdb
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample.csprojResolveAssemblyReference.cache
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\MainWindow.baml
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\Resources.baml
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\Window1.baml
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\Window1.g.cs
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\App.g.cs
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample_MarkupCompile.cache
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample.g.resources
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample.Properties.Resources.resources
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample.csproj.GenerateResource.Cache
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample.exe
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample.pdb
