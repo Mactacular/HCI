@@ -16,9 +16,19 @@ namespace ZoomExample
         public MainWindow()
         {
             InitializeComponent();
-            System.Windows.Media.SolidColorBrush partiallyTransparentSolidColorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.Red);
-            partiallyTransparentSolidColorBrush.Opacity = 0.7;
-            scrollViewer.Background = partiallyTransparentSolidColorBrush;
+            System.Windows.Media.SolidColorBrush partiallyTransparentSolidColorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.LightBlue);
+            partiallyTransparentSolidColorBrush.Opacity = 1.0;
+            //scrollViewer.Background = partiallyTransparentSolidColorBrush;
+            System.Windows.Media.ImageBrush myBrush = new System.Windows.Media.ImageBrush();
+            myBrush.ImageSource = new System.Windows.Media.Imaging.BitmapImage(new System.Uri(@"C:\Users\Mac\Desktop\background2.jpg", System.UriKind.Relative));
+            scrollViewer.Background = myBrush;
+            partiallyTransparentSolidColorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.Black);
+            partiallyTransparentSolidColorBrush.Opacity = 0.3;
+            //leftStackPanel.Background = partiallyTransparentSolidColorBrush;
+            //scrollViewer1.Background = partiallyTransparentSolidColorBrush;
+            //scrollViewer2.Background = partiallyTransparentSolidColorBrush;
+            //scrollViewer3.Background = partiallyTransparentSolidColorBrush;
+            //scrollViewer4.Background = partiallyTransparentSolidColorBrush;
             scrollViewer1.ScrollChanged += OnScrollViewerScrollChanged1;
             scrollViewer1.MouseLeftButtonUp += OnMouseLeftButtonUp1;
             scrollViewer1.PreviewMouseLeftButtonUp += OnMouseLeftButtonUp1;
@@ -59,19 +69,17 @@ namespace ZoomExample
                 Point posNow = e.GetPosition(scrollViewer1);
 
                 double dX = posNow.X - lastDragPoint.Value.X;
-                double dY = posNow.Y - lastDragPoint.Value.Y;
 
                 lastDragPoint = posNow;
 
                 scrollViewer1.ScrollToHorizontalOffset(scrollViewer1.HorizontalOffset - dX);
-                scrollViewer1.ScrollToVerticalOffset(scrollViewer1.VerticalOffset - dY);
             }
         }
 
         void OnMouseLeftButtonDown1(object sender, MouseButtonEventArgs e)
         {
             var mousePos = e.GetPosition(scrollViewer1);
-            if (mousePos.X <= scrollViewer1.ViewportWidth && mousePos.Y < scrollViewer1.ViewportHeight) //make sure we still can use the scrollbars
+            if (mousePos.X <= scrollViewer1.ViewportWidth) //make sure we still can use the scrollbars
             {
                 scrollViewer1.Cursor = Cursors.SizeAll;
                 lastDragPoint = mousePos;
@@ -81,18 +89,6 @@ namespace ZoomExample
 
         void OnPreviewMouseWheel1(object sender, MouseWheelEventArgs e)
         {
-            lastMousePositionOnTarget = Mouse.GetPosition(grid);
-
-            if (e.Delta > 0)
-            {
-                //slider
-            }
-            if (e.Delta < 0)
-            {
-                //slider
-            }
-
-            e.Handled = true;
         }
 
         void OnMouseLeftButtonUp1(object sender, MouseButtonEventArgs e)
@@ -105,7 +101,6 @@ namespace ZoomExample
         void OnSliderValueChanged1(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             scaleTransform.ScaleX = e.NewValue;
-            scaleTransform.ScaleY = e.NewValue;
 
             var centerOfViewport = new Point(scrollViewer1.ViewportWidth / 2, scrollViewer1.ViewportHeight / 2);
             lastCenterPositionOnTarget = scrollViewer1.TranslatePoint(centerOfViewport, grid);
@@ -140,21 +135,17 @@ namespace ZoomExample
                 if (targetBefore.HasValue)
                 {
                     double dXInTargetPixels = targetNow.Value.X - targetBefore.Value.X;
-                    double dYInTargetPixels = targetNow.Value.Y - targetBefore.Value.Y;
 
                     double multiplicatorX = e.ExtentWidth / grid.Width;
-                    double multiplicatorY = e.ExtentHeight / grid.Height;
 
                     double newOffsetX = scrollViewer1.HorizontalOffset - dXInTargetPixels * multiplicatorX;
-                    double newOffsetY = scrollViewer1.VerticalOffset - dYInTargetPixels * multiplicatorY;
 
-                    if (double.IsNaN(newOffsetX) || double.IsNaN(newOffsetY))
+                    if (double.IsNaN(newOffsetX))
                     {
                         return;
                     }
 
                     scrollViewer1.ScrollToHorizontalOffset(newOffsetX);
-                    scrollViewer1.ScrollToVerticalOffset(newOffsetY);
                 }
             }
         }
@@ -165,12 +156,10 @@ namespace ZoomExample
                 Point posNow = e.GetPosition(scrollViewer2);
 
                 double dX = posNow.X - lastDragPoint.Value.X;
-                double dY = posNow.Y - lastDragPoint.Value.Y;
 
                 lastDragPoint = posNow;
 
                 scrollViewer2.ScrollToHorizontalOffset(scrollViewer2.HorizontalOffset - dX);
-                scrollViewer2.ScrollToVerticalOffset(scrollViewer2.VerticalOffset - dY);
             }
         }
 
@@ -187,18 +176,6 @@ namespace ZoomExample
 
         void OnPreviewMouseWheel2(object sender, MouseWheelEventArgs e)
         {
-            lastMousePositionOnTarget = Mouse.GetPosition(grid);
-
-            if (e.Delta > 0)
-            {
-                //slider
-            }
-            if (e.Delta < 0)
-            {
-                //slider
-            }
-
-            e.Handled = true;
         }
 
         void OnMouseLeftButtonUp2(object sender, MouseButtonEventArgs e)
@@ -211,7 +188,6 @@ namespace ZoomExample
         void OnSliderValueChanged2(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             scaleTransform.ScaleX = e.NewValue;
-            scaleTransform.ScaleY = e.NewValue;
 
             var centerOfViewport = new Point(scrollViewer2.ViewportWidth / 2, scrollViewer2.ViewportHeight / 2);
             lastCenterPositionOnTarget = scrollViewer2.TranslatePoint(centerOfViewport, grid);
@@ -246,21 +222,17 @@ namespace ZoomExample
                 if (targetBefore.HasValue)
                 {
                     double dXInTargetPixels = targetNow.Value.X - targetBefore.Value.X;
-                    double dYInTargetPixels = targetNow.Value.Y - targetBefore.Value.Y;
 
                     double multiplicatorX = e.ExtentWidth / grid.Width;
-                    double multiplicatorY = e.ExtentHeight / grid.Height;
 
                     double newOffsetX = scrollViewer2.HorizontalOffset - dXInTargetPixels * multiplicatorX;
-                    double newOffsetY = scrollViewer2.VerticalOffset - dYInTargetPixels * multiplicatorY;
 
-                    if (double.IsNaN(newOffsetX) || double.IsNaN(newOffsetY))
+                    if (double.IsNaN(newOffsetX))
                     {
                         return;
                     }
 
                     scrollViewer2.ScrollToHorizontalOffset(newOffsetX);
-                    scrollViewer2.ScrollToVerticalOffset(newOffsetY);
                 }
             }
         }
@@ -272,19 +244,17 @@ namespace ZoomExample
                 Point posNow = e.GetPosition(scrollViewer3);
 
                 double dX = posNow.X - lastDragPoint.Value.X;
-                double dY = posNow.Y - lastDragPoint.Value.Y;
 
                 lastDragPoint = posNow;
 
                 scrollViewer3.ScrollToHorizontalOffset(scrollViewer3.HorizontalOffset - dX);
-                scrollViewer3.ScrollToVerticalOffset(scrollViewer3.VerticalOffset - dY);
             }
         }
 
         void OnMouseLeftButtonDown3(object sender, MouseButtonEventArgs e)
         {
             var mousePos = e.GetPosition(scrollViewer3);
-            if (mousePos.X <= scrollViewer3.ViewportWidth && mousePos.Y < scrollViewer3.ViewportHeight) //make sure we still can use the scrollbars
+            if (mousePos.X <= scrollViewer3.ViewportWidth) //make sure we still can use the scrollbars
             {
                 scrollViewer3.Cursor = Cursors.SizeAll;
                 lastDragPoint = mousePos;
@@ -294,18 +264,6 @@ namespace ZoomExample
 
         void OnPreviewMouseWheel3(object sender, MouseWheelEventArgs e)
         {
-            lastMousePositionOnTarget = Mouse.GetPosition(grid);
-
-            if (e.Delta > 0)
-            {
-                //slider
-            }
-            if (e.Delta < 0)
-            {
-                //slider
-            }
-
-            e.Handled = true;
         }
 
         void OnMouseLeftButtonUp3(object sender, MouseButtonEventArgs e)
@@ -318,7 +276,6 @@ namespace ZoomExample
         void OnSliderValueChanged3(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             scaleTransform.ScaleX = e.NewValue;
-            scaleTransform.ScaleY = e.NewValue;
 
             var centerOfViewport = new Point(scrollViewer3.ViewportWidth / 2, scrollViewer3.ViewportHeight / 2);
             lastCenterPositionOnTarget = scrollViewer3.TranslatePoint(centerOfViewport, grid);
@@ -353,21 +310,17 @@ namespace ZoomExample
                 if (targetBefore.HasValue)
                 {
                     double dXInTargetPixels = targetNow.Value.X - targetBefore.Value.X;
-                    double dYInTargetPixels = targetNow.Value.Y - targetBefore.Value.Y;
 
                     double multiplicatorX = e.ExtentWidth / grid.Width;
-                    double multiplicatorY = e.ExtentHeight / grid.Height;
 
                     double newOffsetX = scrollViewer3.HorizontalOffset - dXInTargetPixels * multiplicatorX;
-                    double newOffsetY = scrollViewer3.VerticalOffset - dYInTargetPixels * multiplicatorY;
 
-                    if (double.IsNaN(newOffsetX) || double.IsNaN(newOffsetY))
+                    if (double.IsNaN(newOffsetX))
                     {
                         return;
                     }
 
                     scrollViewer3.ScrollToHorizontalOffset(newOffsetX);
-                    scrollViewer3.ScrollToVerticalOffset(newOffsetY);
                 }
             }
         }
@@ -379,19 +332,17 @@ namespace ZoomExample
                 Point posNow = e.GetPosition(scrollViewer4);
 
                 double dX = posNow.X - lastDragPoint.Value.X;
-                double dY = posNow.Y - lastDragPoint.Value.Y;
 
                 lastDragPoint = posNow;
 
                 scrollViewer4.ScrollToHorizontalOffset(scrollViewer4.HorizontalOffset - dX);
-                scrollViewer4.ScrollToVerticalOffset(scrollViewer4.VerticalOffset - dY);
             }
         }
 
         void OnMouseLeftButtonDown4(object sender, MouseButtonEventArgs e)
         {
             var mousePos = e.GetPosition(scrollViewer4);
-            if (mousePos.X <= scrollViewer4.ViewportWidth && mousePos.Y < scrollViewer4.ViewportHeight) //make sure we still can use the scrollbars
+            if (mousePos.X <= scrollViewer4.ViewportWidth) //make sure we still can use the scrollbars
             {
                 scrollViewer4.Cursor = Cursors.SizeAll;
                 lastDragPoint = mousePos;
@@ -401,18 +352,6 @@ namespace ZoomExample
 
         void OnPreviewMouseWheel4(object sender, MouseWheelEventArgs e)
         {
-            lastMousePositionOnTarget = Mouse.GetPosition(grid);
-
-            if (e.Delta > 0)
-            {
-                //slider
-            }
-            if (e.Delta < 0)
-            {
-                //slider
-            }
-
-            e.Handled = true;
         }
 
         void OnMouseLeftButtonUp4(object sender, MouseButtonEventArgs e)
@@ -425,7 +364,6 @@ namespace ZoomExample
         void OnSliderValueChanged4(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             scaleTransform.ScaleX = e.NewValue;
-            scaleTransform.ScaleY = e.NewValue;
 
             var centerOfViewport = new Point(scrollViewer4.ViewportWidth / 2, scrollViewer4.ViewportHeight / 2);
             lastCenterPositionOnTarget = scrollViewer4.TranslatePoint(centerOfViewport, grid);
@@ -460,21 +398,17 @@ namespace ZoomExample
                 if (targetBefore.HasValue)
                 {
                     double dXInTargetPixels = targetNow.Value.X - targetBefore.Value.X;
-                    double dYInTargetPixels = targetNow.Value.Y - targetBefore.Value.Y;
 
                     double multiplicatorX = e.ExtentWidth / grid.Width;
-                    double multiplicatorY = e.ExtentHeight / grid.Height;
 
                     double newOffsetX = scrollViewer4.HorizontalOffset - dXInTargetPixels * multiplicatorX;
-                    double newOffsetY = scrollViewer4.VerticalOffset - dYInTargetPixels * multiplicatorY;
 
-                    if (double.IsNaN(newOffsetX) || double.IsNaN(newOffsetY))
+                    if (double.IsNaN(newOffsetX))
                     {
                         return;
                     }
 
                     scrollViewer4.ScrollToHorizontalOffset(newOffsetX);
-                    scrollViewer4.ScrollToVerticalOffset(newOffsetY);
                 }
             }
         }
