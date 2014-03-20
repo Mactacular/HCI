@@ -12,10 +12,12 @@ namespace ZoomExample
         Point? lastCenterPositionOnTarget;
         Point? lastMousePositionOnTarget;
         Point? lastDragPoint;
-
+        int numClicks = 0;
+        System.DateTime timer;
         public MainWindow()
         {
             InitializeComponent();
+            System.Console.WriteLine("LOOK AT MEEEEE");
             System.Windows.Media.SolidColorBrush partiallyTransparentSolidColorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.LightBlue);
             partiallyTransparentSolidColorBrush.Opacity = 1.0;
             //scrollViewer.Background = partiallyTransparentSolidColorBrush;
@@ -98,13 +100,13 @@ namespace ZoomExample
             lastDragPoint = null;
         }
 
-        void OnSliderValueChanged1(object sender, RoutedPropertyChangedEventArgs<double> e)
+        /*void OnSliderValueChanged1(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             scaleTransform.ScaleX = e.NewValue;
 
             var centerOfViewport = new Point(scrollViewer1.ViewportWidth / 2, scrollViewer1.ViewportHeight / 2);
             lastCenterPositionOnTarget = scrollViewer1.TranslatePoint(centerOfViewport, grid);
-        }
+        }*/
 
         void OnScrollViewerScrollChanged1(object sender, ScrollChangedEventArgs e)
         {
@@ -410,6 +412,29 @@ namespace ZoomExample
 
                     scrollViewer4.ScrollToHorizontalOffset(newOffsetX);
                 }
+            }
+        }
+
+        private void btn11_Click(object sender, RoutedEventArgs e)
+        {
+            numClicks = numClicks + 1;
+            if (numClicks == 2)
+            {
+                System.DateTime timeout = System.DateTime.Now;
+                if ((timeout - timer).TotalSeconds < 0.5)
+                {
+                    System.Console.WriteLine("BUTTON PUSHED");
+                    badStackPanel.Visibility = System.Windows.Visibility.Visible;
+                    numClicks = 0;
+                }
+                else
+                {
+                    numClicks = 0;
+                }
+            }
+            else
+            {
+                timer = System.DateTime.Now;
             }
         }
     }

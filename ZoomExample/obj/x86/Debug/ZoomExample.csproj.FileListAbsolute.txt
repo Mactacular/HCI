@@ -39,3 +39,5 @@ C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample.Pr
 C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample.csproj.GenerateResource.Cache
 C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample.exe
 C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample.pdb
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\Window1.baml
+C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\Window1.g.cs
