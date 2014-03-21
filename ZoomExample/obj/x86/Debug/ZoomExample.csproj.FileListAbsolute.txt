@@ -69,3 +69,5 @@ C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\RatingControl.g.cs
 C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\Window1.baml
 C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\Window1.g.cs
 C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.g.resources
+C:\Eclipse\HCI\trunk\ZoomExample\obj\x86\Debug\ZoomExample.exe
+C:\Eclipse\HCI\trunk\ZoomExample\obj\x86\Debug\ZoomExample.pdb

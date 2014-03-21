@@ -16,11 +16,13 @@
             <TextBox Text="Recipe" FontSize="20" Width="140" TextAlignment="Center"/>
             <TextBox Text="Ingredients" FontSize="20" Width="140" TextAlignment="Center"/>
             <TextBox Text="Reviews" FontSize="20" Width="140" TextAlignment="Center"/>
+            <r:RatingControl Width="87" Height="15"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="89,349,163,453" Grid.RowSpan="3">
             <TextBox Text="Difficulty: Hard" FontSize="20" Width="140" TextAlignment="Center"/>
             <TextBox Text="Time: 2 Hours" FontSize="20" Width="140" TextAlignment="Center"/>
             <Image HorizontalAlignment="Center" VerticalAlignment="Top" Width="140" Source="star4.png" Height="44"/>
+            <r:RatingControl Width="87" Height="15"/>
         </StackPanel>
         <Image x:Name="turk" HorizontalAlignment="Left" Height="266" Margin="131,76,0,0" VerticalAlignment="Top" Width="401" Source="turkey.jpg" RenderTransformOrigin="0.654,0.487"/>
         <ScrollViewer HorizontalAlignment="Left" Height="150" Margin="40,327,0,0" VerticalAlignment="Top" Width="521" VerticalScrollBarVisibility="Hidden" Grid.RowSpan="3"/>
