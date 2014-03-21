@@ -27,5 +27,14 @@ namespace ZoomExample
         {
 
         }
+
+        private void listBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+        private void noteHandler(object sender, RoutedEventArgs e)
+        {
+            Notes.Visibility = System.Windows.Visibility.Visible;
+        }
     }
 }
