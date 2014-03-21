@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("background3.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ratingcontrolsample.dll")]
 
 
