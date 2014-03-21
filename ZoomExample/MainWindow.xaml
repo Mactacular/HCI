@@ -1,12 +1,23 @@
 ﻿<Window x:Class="ZoomExample.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="MainWindow" Height="798" Width="1024">
+    <Window.Background>
+        <ImageBrush ImageSource="background2.jpg" />
+    </Window.Background>
+    
     <Window.Resources>
         <ResourceDictionary>
             <Style TargetType="TextBlock">
                 <Setter Property="HorizontalAlignment" Value="Center" />
                 <Setter Property="FontFamily" Value="Comic Sans MS"/>
                 <Setter Property="FontSize" Value="3"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="Height" Value="7" />
+                <Setter Property="Width" Value="15" />
+                <Setter Property="Margin" Value="1" />
+                <Setter Property="FontFamily" Value="Verdana"/>
+                <Setter Property="FontSize" Value="2"/>
             </Style>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources.xaml"/>
@@ -33,37 +44,37 @@
                         <ScaleTransform x:Name="scaleTransform"/>
                     </TransformGroup>
                 </Grid.LayoutTransform>
-                <Viewbox Grid.Row="0" Margin="10,134,590,-131">
+                <Viewbox Grid.Row="0" Margin="10,86,590,-131">
                     <StackPanel Height="705">
-                        <Image Source = "CATEGORY_Classic_Favourites.jpg"  HorizontalAlignment="Left" Height="154" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                        <Image Source = "CATEGORY_Comfort_Food.jpg" HorizontalAlignment="Left" Height="155" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                        <Image Source = "CATEGORY_Desserts.jpg" HorizontalAlignment="Left" Height="154" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                        <Image Source = "CATEGORY_International_Flavour.jpg" HorizontalAlignment="Left" Height="145" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
+                        <Image Source = "CATEGORY_Classic_Favourites.jpg"  HorizontalAlignment="Left" Height="105" VerticalAlignment="Top" Width="118" RenderTransformOrigin="0.5,0.5"/>
+                        <Image Source = "CATEGORY_Comfort_Food.jpg" HorizontalAlignment="Left" Height="105" VerticalAlignment="Top" Width="118" RenderTransformOrigin="0.5,0.5"/>
+                        <Image Source = "CATEGORY_International_Flavour.jpg" HorizontalAlignment="Left" Height="105" VerticalAlignment="Top" Width="118" RenderTransformOrigin="0.5,0.5"/>
+                        <Image Source = "CATEGORY_Desserts.jpg" HorizontalAlignment="Left" Height="105" VerticalAlignment="Top" Width="118" RenderTransformOrigin="0.5,0.5"/>
                     </StackPanel>
                 </Viewbox>
-                <Viewbox Grid.Row="0" Margin="446,10,-90,30" Grid.ColumnSpan="2">
+                <Viewbox Grid.Row="0" Margin="446,36,-90,4" Grid.ColumnSpan="2">
                     <StackPanel Height="714" Width="257">
                         <StackPanel.Resources>
                             <Style TargetType="{x:Type Rectangle}">
-                                <Setter Property="Margin" Value="0,40,0,3"/>
+                                <Setter Property="Margin" Value="0,13,0,3"/>
                             </Style>
                         </StackPanel.Resources>
-                        <Rectangle Height="116">
+                        <Rectangle Height="95">
                             <Rectangle.Fill>
                                 <SolidColorBrush Color="Black" Opacity="0.2" />
                             </Rectangle.Fill>
                         </Rectangle>
-                        <Rectangle Height="116">
+                        <Rectangle Height="95">
                             <Rectangle.Fill>
                                 <SolidColorBrush Color="Black" Opacity="0.25" />
                             </Rectangle.Fill>
                         </Rectangle>
-                        <Rectangle Height="116">
+                        <Rectangle Height="95">
                             <Rectangle.Fill>
                                 <SolidColorBrush Color="Black" Opacity="0.25" />
                             </Rectangle.Fill>
                         </Rectangle>
-                        <Rectangle Height="116">
+                        <Rectangle Height="95">
                             <Rectangle.Fill>
                                 <SolidColorBrush Color="Black" Opacity="0.25" />
                             </Rectangle.Fill>
@@ -71,7 +82,7 @@
                     </StackPanel>
                 </Viewbox>
 
-                <Viewbox Grid.Row="0" Margin="446,-57,-354,6" Grid.ColumnSpan="2">
+                <Viewbox Grid.Row="0" Margin="446,-115,-354,64" Grid.ColumnSpan="2">
                     <StackPanel x:Name="leftStackPanel" Height="533">
                         <ScrollViewer x:Name="scrollViewer1" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="0,9,0,-9" Width="294" Height="130">
                             <Grid x:Name="grid1" Width="865" Height="160" RenderTransformOrigin="0.5,0.5">
@@ -80,26 +91,23 @@
                                         <ScaleTransform x:Name="scaleTransform1"/>
                                     </TransformGroup>
                                 </Grid.LayoutTransform>
-                                <Viewbox Grid.Column="0" Grid.Row="0" Margin="10,11,0,-10">
+                                <Viewbox Grid.Column="0" Grid.Row="0" Margin="10,-9,10,10">
                                     <StackPanel Margin="0" Orientation="Horizontal" Width="982" >
                                         <StackPanel.Resources>
                                             <Style TargetType="{x:Type Image}">
                                                 <Setter Property="Margin" Value="0,0,25,0"/>
                                             </Style>
                                         </StackPanel.Resources>
-                                        <Image Source = "Classic_Roast_Turkey.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5" MouseUp = "btn11_Click"/>
-                                        <Image Source = "Roasted_Salmon_and_Asparagus.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Pizza_Magherita.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Classic_Roast_Turkey.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" MouseUp = "btn11_Click"/>
+                                        <Image Source = "Roasted_Salmon_and_Asparagus.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Pizza_Magherita.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
                                     </StackPanel>
                                 </Viewbox>
-                                <Viewbox Grid.Column="0" Grid.Row="0" Margin="10,11,0,-10">
-                                </Viewbox>
+                                <Viewbox Grid.Column="0" Grid.Row="0" Margin="10,11,0,-10"/>
                             </Grid>
 
                         </ScrollViewer>
-                        <ScrollViewer x:Name="scrollViewer2" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="0,9,0,-9" Width="294" Height="130">
+                        <ScrollViewer x:Name="scrollViewer2" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="0,-50,0,-9" Width="294" Height="130">
 
                             <Grid x:Name="grid2" Width="865" Height="160" RenderTransformOrigin="0.5,0.5">
                                 <Grid.LayoutTransform>
@@ -114,17 +122,15 @@
                                                 <Setter Property="Margin" Value="0,0,25,0"/>
                                             </Style>
                                         </StackPanel.Resources>
-                                        <Image Source = "Four_Cheese_Pizza.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Citrus_Shrimp_Skewers.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Grilled_Mac_and_Cheese.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Four_Cheese_Pizza.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Citrus_Shrimp_Skewers.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Grilled_Mac_and_Cheese.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
                                     </StackPanel>
                                 </Viewbox>
                             </Grid>
 
                         </ScrollViewer>
-                        <ScrollViewer x:Name="scrollViewer3" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="0,9,0,-9" Width="294" Height="130">
+                        <ScrollViewer x:Name="scrollViewer3" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="0,-31,0,-9" Width="294" Height="130">
 
                             <Grid x:Name="grid3" Width="865" Height="160" RenderTransformOrigin="0.5,0.5">
                                 <Grid.LayoutTransform>
@@ -139,17 +145,15 @@
                                                 <Setter Property="Margin" Value="0,0,25,0"/>
                                             </Style>
                                         </StackPanel.Resources>
-                                        <Image Source = "Spicy_Beef_Tacos.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Ginger_Chicken.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Pad_Kee_Mao.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Spicy_Beef_Tacos.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Ginger_Chicken.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Pad_Kee_Mao.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
                                     </StackPanel>
                                 </Viewbox>
                             </Grid>
 
                         </ScrollViewer>
-                        <ScrollViewer x:Name="scrollViewer4" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="0,9,0,-9" Width="294" Height="130">
+                        <ScrollViewer x:Name="scrollViewer4" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="0,-29,0,-9" Width="294" Height="130">
 
                             <Grid x:Name="grid4" Width="865" Height="160" RenderTransformOrigin="0.5,0.5">
                                 <Grid.LayoutTransform>
@@ -164,11 +168,9 @@
                                                 <Setter Property="Margin" Value="0,0,25,0"/>
                                             </Style>
                                         </StackPanel.Resources>
-                                        <Image Source = "Vanilla_Grapefruit_Cake.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Chocolate_Raspberry_Tart.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Cinnamon_Roll_Pancakes.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Vanilla_Grapefruit_Cake.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Chocolate_Raspberry_Tart.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Cinnamon_Roll_Pancakes.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
                                     </StackPanel>
                                 </Viewbox>
                             </Grid>
@@ -176,23 +178,34 @@
                         </ScrollViewer>
                     </StackPanel>
                 </Viewbox>
-                <Viewbox Grid.Row="0" Margin="345,134,207,1494" RenderTransformOrigin="0.5,0.5">
+                <Viewbox Grid.Row="0" Margin="347,98,205,1530" RenderTransformOrigin="0.5,0.5">
+                    <Viewbox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="-0.424"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="0.993"/>
+                        </TransformGroup>
+                    </Viewbox.RenderTransform>
                     <Border Name ="border" Margin="0" Padding="3" Background="Ivory" Visibility="Hidden"
           BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
-          VerticalAlignment="Top">
-                        <StackPanel Name="badStackPanel" Height="38" Visibility="Hidden" Background="Ivory">
-                        <TextBlock Text="Rasberry Souffle"/>
-                        <TextBlock Text="Diffculty: HARD"/>
-                        <TextBlock Text="Cook Time: 2 Hours"/>
-                        <TextBlock Text="Ingredients:"/>
-                        <TextBlock Text="    -Butter"/>
-                        <TextBlock Text="    -Sugar"/>
-                        <TextBlock Text="    -Rasberries"/>
-                        <TextBlock Text="    -Eggs"/>
-                        <TextBlock Text="    -Cream"/>
-                        
-                    </StackPanel>
-                 </Border>
+          VerticalAlignment="Top" Height="56">
+                        <StackPanel Name="badStackPanel" Height="45" Visibility="Visible" Background="Ivory">
+                            <TextBlock Text="Roast Turkey" HorizontalAlignment="Left"/>
+                            <TextBlock Text="Diffculty: HARD" HorizontalAlignment="Left"/>
+                            <TextBlock Text="Cook Time: 3 Hours" HorizontalAlignment="Left"/>
+                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left"/>
+                            <TextBlock Text="    -Butter" HorizontalAlignment="Left"/>
+                            <TextBlock Text="    -Carrots" HorizontalAlignment="Left"/>
+                            <TextBlock Text="    -Potatoes" HorizontalAlignment="Left"/>
+                            <TextBlock Text="    -Salt" HorizontalAlignment="Left"/>
+                            <TextBlock Text="    -Pepper" HorizontalAlignment="Left"/>
+                            <WrapPanel>
+                                <Button Name="cook"  Content="Cook!"/>
+                                <Button Name="noThx"  Content="No Thanks!"/>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
                 </Viewbox>
 
             </Grid>

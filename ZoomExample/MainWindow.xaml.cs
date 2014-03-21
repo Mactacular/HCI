@@ -22,8 +22,8 @@ namespace ZoomExample
             partiallyTransparentSolidColorBrush.Opacity = 1.0;
             //scrollViewer.Background = partiallyTransparentSolidColorBrush;
             System.Windows.Media.ImageBrush myBrush = new System.Windows.Media.ImageBrush();
-            myBrush.ImageSource = new System.Windows.Media.Imaging.BitmapImage(new System.Uri(@"C:\Users\Mac\Desktop\background2.jpg", System.UriKind.Relative));
-            scrollViewer.Background = myBrush;
+            //myBrush.ImageSource = new System.Windows.Media.Imaging.BitmapImage(new System.Uri(@"Resources/background2.jpg", System.UriKind.Relative));
+            //scrollViewer.Background = myBrush;
             //partiallyTransparentSolidColorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.);
             //partiallyTransparentSolidColorBrush.Opacity = 0.3;
             //leftStackPanel.Background = partiallyTransparentSolidColorBrush;
@@ -31,6 +31,8 @@ namespace ZoomExample
             //scrollViewer2.Background = partiallyTransparentSolidColorBrush;
             //scrollViewer3.Background = partiallyTransparentSolidColorBrush;
             //scrollViewer4.Background = partiallyTransparentSolidColorBrush;
+            cook.Click += cook_Click;
+            noThx.Click += noThx_Click;
             scrollViewer1.ScrollChanged += OnScrollViewerScrollChanged1;
             scrollViewer1.MouseLeftButtonUp += OnMouseLeftButtonUp1;
             scrollViewer1.PreviewMouseLeftButtonUp += OnMouseLeftButtonUp1;
@@ -62,6 +64,18 @@ namespace ZoomExample
 
             scrollViewer4.PreviewMouseLeftButtonDown += OnMouseLeftButtonDown4;
             scrollViewer4.MouseMove += OnMouseMove4;
+        }
+
+        void noThx_Click(object sender, RoutedEventArgs e)
+        {
+            badStackPanel.Visibility = System.Windows.Visibility.Hidden;
+            border.Visibility = System.Windows.Visibility.Hidden;  
+        }
+
+        void cook_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 win = new Window1();
+            win.ShowDialog();
         }
 
         void OnMouseMove1(object sender, MouseEventArgs e)
@@ -425,10 +439,10 @@ namespace ZoomExample
                 if ((timeout - timer).TotalSeconds < 0.5)
                 {
                     //System.Console.WriteLine("BUTTON PUSHED");
-                    //badStackPanel.Visibility = System.Windows.Visibility.Visible;
-                    //border.Visibility = System.Windows.Visibility.Visible;
-                    Window1 win = new Window1();
-                    win.ShowDialog();
+                    badStackPanel.Visibility = System.Windows.Visibility.Visible;
+                    border.Visibility = System.Windows.Visibility.Visible;
+                   // Window1 win = new Window1();
+                    //win.ShowDialog();
                     numClicks = 0;
                 }
                 else
