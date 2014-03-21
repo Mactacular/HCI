@@ -424,9 +424,11 @@ namespace ZoomExample
                 System.DateTime timeout = System.DateTime.Now;
                 if ((timeout - timer).TotalSeconds < 0.5)
                 {
-                    System.Console.WriteLine("BUTTON PUSHED");
-                    badStackPanel.Visibility = System.Windows.Visibility.Visible;
-                    border.Visibility = System.Windows.Visibility.Visible;
+                    //System.Console.WriteLine("BUTTON PUSHED");
+                    //badStackPanel.Visibility = System.Windows.Visibility.Visible;
+                    //border.Visibility = System.Windows.Visibility.Visible;
+                    Window1 win = new Window1();
+                    win.ShowDialog();
                     numClicks = 0;
                 }
                 else
@@ -440,4 +442,5 @@ namespace ZoomExample
             //}
         }
     }
+
 }

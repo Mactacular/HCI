@@ -38,6 +38,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -102,6 +103,67 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="star.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="turkey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="star4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pad_Kee_Mao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pizza_Magherita.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Grilled_Mac_and_Cheese.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CATEGORY_Comfort_Food.jpg" />
+    <Resource Include="CATEGORY_Desserts.jpg" />
+    <Resource Include="CATEGORY_International_Flavour.jpg" />
+    <Resource Include="Chocolate_Raspberry_Tart.jpg" />
+    <Resource Include="Cinnamon_Roll_Pancakes.jpg" />
+    <Resource Include="Citrus_Shrimp_Skewers.jpg" />
+    <Resource Include="Classic_Roast_Turkey.jpg" />
+    <Resource Include="Ginger_Chicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Vanilla_Grapefruit_Cake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Spicy_Beef_Tacos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Roasted_Salmon_and_Asparagus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Zesty_Calamari.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CATEGORY_Classic_Favourites.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Four_Cheese_Pizza.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

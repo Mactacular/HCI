@@ -8,12 +8,12 @@
             <RowDefinition Height="16*" />
             <RowDefinition Height="403*" />
         </Grid.RowDefinitions>
-        <Image HorizontalAlignment="Left" Height="233" Margin="40,15,0,0" VerticalAlignment="Top" Width="276" Source="turkey.jpg" RenderTransformOrigin="0.654,0.487"/>
-        <ScrollViewer HorizontalAlignment="Left" Height="150" Margin="40,317,0,0" VerticalAlignment="Top" Width="521" VerticalScrollBarVisibility="Hidden" Grid.RowSpan="3">
+        <Image x:Name="turk" HorizontalAlignment="Left" Height="233" Margin="40,15,0,0" VerticalAlignment="Top" Width="276" Source="turkey.jpg" RenderTransformOrigin="0.654,0.487"/>
+            <ScrollViewer HorizontalAlignment="Left" Height="150" Margin="40,317,0,0" VerticalAlignment="Top" Width="521" VerticalScrollBarVisibility="Hidden" Grid.RowSpan="3">
             <TextBlock Height="148" Name="textBlock1" Text="1) Make Turkey
 2) Profit"  Background="White"/>
         </ScrollViewer>
-        <Image HorizontalAlignment="Left" Height="23" Margin="441,251,0,0" VerticalAlignment="Top" Width="113" Source="star.png"/>
+        <Image HorizontalAlignment="Left" Height="23" Margin="441,251,0,0" VerticalAlignment="Top" Width="113" Source="star4.png"/>
         <Label Content="Prep Directions" HorizontalAlignment="Left" Margin="40,277,0,0" VerticalAlignment="Top" Width="100" FontWeight="Bold"/>
         <Label Content="Prep Time: 3 hrs" HorizontalAlignment="Left" Margin="257,248,0,0" VerticalAlignment="Top" Width="106" FontWeight="Bold"/>
         <Label Content="Difficulty: Medium" HorizontalAlignment="Left" Margin="40,246,0,0" VerticalAlignment="Top" Width="123" FontWeight="Bold"/>
@@ -22,7 +22,7 @@
             <TextBox Height="180" TextWrapping="Wrap" Text="Turkey&#xD;&#xA;Butter&#xD;&#xA;Gravy" Width="184"/>
         </ScrollViewer>
         <Button Content="Annotate" Name="Annotate1" HorizontalAlignment="Left" Margin="466,281,0,0" VerticalAlignment="Top" Width="75" Click="noteHandler"/>
-        <TextBox Height="129" HorizontalAlignment="Left" Margin="40,147,0,0" Name="Notes" VerticalAlignment="Top" Width="514" Visibility="Visible" Grid.Row="2" />
+        <TextBox Height="129" HorizontalAlignment="Left" Margin="40,147,0,0" Name="Notes" VerticalAlignment="Top" Width="514" Visibility="Hidden" Grid.Row="2" />
         <Label Content="Notes" Height="28" HorizontalAlignment="Left" Margin="48,155,0,0" Name="label1" VerticalAlignment="Top" Width="43" Grid.Row="2" />
     </Grid>
 </Window>
