@@ -24,10 +24,10 @@ namespace ZoomExample
             System.Windows.Media.ImageBrush myBrush = new System.Windows.Media.ImageBrush();
             myBrush.ImageSource = new System.Windows.Media.Imaging.BitmapImage(new System.Uri(@"C:\Users\Mac\Desktop\background2.jpg", System.UriKind.Relative));
             scrollViewer.Background = myBrush;
-            partiallyTransparentSolidColorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.Black);
-            partiallyTransparentSolidColorBrush.Opacity = 0.3;
+            //partiallyTransparentSolidColorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.);
+            //partiallyTransparentSolidColorBrush.Opacity = 0.3;
             //leftStackPanel.Background = partiallyTransparentSolidColorBrush;
-            //scrollViewer1.Background = partiallyTransparentSolidColorBrush;
+            //badStackPanel.Background = partiallyTransparentSolidColorBrush;
             //scrollViewer2.Background = partiallyTransparentSolidColorBrush;
             //scrollViewer3.Background = partiallyTransparentSolidColorBrush;
             //scrollViewer4.Background = partiallyTransparentSolidColorBrush;
@@ -80,6 +80,7 @@ namespace ZoomExample
 
         void OnMouseLeftButtonDown1(object sender, MouseButtonEventArgs e)
         {
+            timer = System.DateTime.Now;
             var mousePos = e.GetPosition(scrollViewer1);
             if (mousePos.X <= scrollViewer1.ViewportWidth) //make sure we still can use the scrollbars
             {
@@ -417,25 +418,26 @@ namespace ZoomExample
 
         private void btn11_Click(object sender, RoutedEventArgs e)
         {
-            numClicks = numClicks + 1;
-            if (numClicks == 2)
-            {
+            //numClicks = numClicks + 1;
+            //if (numClicks == 2)
+            //{
                 System.DateTime timeout = System.DateTime.Now;
                 if ((timeout - timer).TotalSeconds < 0.5)
                 {
                     System.Console.WriteLine("BUTTON PUSHED");
                     badStackPanel.Visibility = System.Windows.Visibility.Visible;
+                    border.Visibility = System.Windows.Visibility.Visible;
                     numClicks = 0;
                 }
                 else
                 {
                     numClicks = 0;
                 }
-            }
-            else
-            {
-                timer = System.DateTime.Now;
-            }
+            //}
+            //else
+            //{
+              //  timer = System.DateTime.Now;
+            //}
         }
     }
 }

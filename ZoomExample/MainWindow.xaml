@@ -3,6 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="MainWindow" Height="798" Width="1024">
     <Window.Resources>
         <ResourceDictionary>
+            <Style TargetType="TextBlock">
+                <Setter Property="HorizontalAlignment" Value="Center" />
+                <Setter Property="FontFamily" Value="Comic Sans MS"/>
+                <Setter Property="FontSize" Value="3"/>
+            </Style>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources.xaml"/>
             </ResourceDictionary.MergedDictionaries>
@@ -13,10 +18,13 @@
             <ColumnDefinition Width="758"/>
             <ColumnDefinition Width="293"/>
         </Grid.ColumnDefinitions>
-        <ScrollViewer Name="scrollViewer" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Hidden" Margin="-35,-2,45,12" Grid.ColumnSpan="2">
+        <ScrollViewer Name="scrollViewer" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Hidden" Margin="-35,6,45,4" Grid.ColumnSpan="2">
 
             <Grid Name="grid" Width="1024" Height="1896" RenderTransformOrigin="0.5,0.5">
                 <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="995*"/>
+                    <ColumnDefinition Width="29*"/>
 
                 </Grid.ColumnDefinitions>
 
@@ -25,7 +33,7 @@
                         <ScaleTransform x:Name="scaleTransform"/>
                     </TransformGroup>
                 </Grid.LayoutTransform>
-                <Viewbox Grid.Row="0" Margin="10,134,619,-131">
+                <Viewbox Grid.Row="0" Margin="10,134,590,-131">
                     <StackPanel Height="705">
                         <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="154" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
                         <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="155" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
@@ -33,7 +41,7 @@
                         <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="145" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
                     </StackPanel>
                 </Viewbox>
-                <Viewbox Grid.Row="0" Margin="446,10,-90,30">
+                <Viewbox Grid.Row="0" Margin="446,10,-90,30" Grid.ColumnSpan="2">
                     <StackPanel Height="714" Width="257">
                         <StackPanel.Resources>
                             <Style TargetType="{x:Type Rectangle}">
@@ -62,8 +70,8 @@
                         </Rectangle>
                     </StackPanel>
                 </Viewbox>
-                
-                <Viewbox Grid.Row="0" Margin="446,-57,-354,6">
+
+                <Viewbox Grid.Row="0" Margin="446,-57,-354,6" Grid.ColumnSpan="2">
                     <StackPanel x:Name="leftStackPanel" Height="533">
                         <ScrollViewer x:Name="scrollViewer1" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="0,9,0,-9" Width="294" Height="130">
                             <Grid x:Name="grid1" Width="865" Height="160" RenderTransformOrigin="0.5,0.5">
@@ -84,8 +92,8 @@
                                         <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
                                         <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
                                         <Image Source = "C:\Users\Mac\Desktop\images.jpg" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.5,0.5"/>
-                                        </StackPanel>
-                                    </Viewbox>
+                                    </StackPanel>
+                                </Viewbox>
                                 <Viewbox Grid.Column="0" Grid.Row="0" Margin="10,11,0,-10">
                                 </Viewbox>
                             </Grid>
@@ -168,13 +176,25 @@
                         </ScrollViewer>
                     </StackPanel>
                 </Viewbox>
-                <Viewbox Grid.Row="0" Margin="490,134,139,-131">
-                    <StackPanel Name="badStackPanel"  Height="705" Visibility="Hidden">
-                        <TextBox Text="Difficulty: Hard" />
-                        <TextBox Text="Time: >9000" />
-                        <TextBox Text="Ingredients: All the Things" />
+                <Viewbox Grid.Row="0" Margin="345,134,207,1494" RenderTransformOrigin="0.5,0.5">
+                    <Border Name ="border" Margin="0" Padding="3" Background="Ivory" Visibility="Hidden"
+          BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
+          VerticalAlignment="Top">
+                        <StackPanel Name="badStackPanel" Height="38" Visibility="Hidden" Background="Ivory">
+                        <TextBlock Text="Rasberry Souffle"/>
+                        <TextBlock Text="Diffculty: HARD"/>
+                        <TextBlock Text="Cook Time: 2 Hours"/>
+                        <TextBlock Text="Ingredients:"/>
+                        <TextBlock Text="    -Butter"/>
+                        <TextBlock Text="    -Sugar"/>
+                        <TextBlock Text="    -Rasberries"/>
+                        <TextBlock Text="    -Eggs"/>
+                        <TextBlock Text="    -Cream"/>
+                        
                     </StackPanel>
+                 </Border>
                 </Viewbox>
+
             </Grid>
 
         </ScrollViewer>
