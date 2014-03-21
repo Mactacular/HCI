@@ -56,3 +56,16 @@ C:\Users\Mac\Desktop\New folder\trunk\ZoomExample\obj\x86\Debug\ZoomExample_Mark
 C:\Users\Mac\Desktop\New folder\trunk\ZoomExample\obj\x86\Debug\ZoomExample.g.resources
 C:\Users\Mac\Desktop\New folder\trunk\ZoomExample\obj\x86\Debug\ZoomExample.Properties.Resources.resources
 C:\Users\Mac\Desktop\New folder\trunk\ZoomExample\obj\x86\Debug\ZoomExample.csproj.GenerateResource.Cache
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.exe
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.pdb
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.csprojResolveAssemblyReference.cache
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\MainWindow.baml
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\Resources.baml
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\MainWindow.g.cs
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\App.g.cs
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample_MarkupCompile.cache
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\RatingControl.baml
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\RatingControl.g.cs
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\Window1.baml
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\Window1.g.cs
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.g.resources
