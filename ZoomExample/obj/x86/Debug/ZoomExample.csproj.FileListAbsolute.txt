@@ -41,3 +41,20 @@ C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample.ex
 C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample.pdb
 C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\Window1.baml
 C:\Users\Mac\Desktop\cpsc 481\HCI\trunk\ZoomExample\obj\x86\Debug\Window1.g.cs
+\\cs-fs01\Profiles\ug\danielcm\Desktop\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.exe
+\\cs-fs01\Profiles\ug\danielcm\Desktop\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.pdb
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.exe
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.pdb
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\bin\Debug\ZoomExample.exe
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\bin\Debug\ZoomExample.pdb
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.csprojResolveAssemblyReference.cache
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\MainWindow.baml
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\Resources.baml
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\Window1.baml
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\MainWindow.g.cs
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\Window1.g.cs
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\App.g.cs
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample_MarkupCompile.cache
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.g.resources
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.Properties.Resources.resources
+C:\Eclipse\HCI-master\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.csproj.GenerateResource.Cache
