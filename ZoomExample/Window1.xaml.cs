@@ -36,5 +36,11 @@ namespace ZoomExample
         {
             Notes.Visibility = System.Windows.Visibility.Visible;
         }
+
+        private void RatingControl_Loaded_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }

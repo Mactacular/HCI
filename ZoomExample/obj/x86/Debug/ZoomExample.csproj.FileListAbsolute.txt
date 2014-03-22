@@ -90,3 +90,9 @@ C:\Users\Mac\Desktop\HCI-master\ZoomExample\bin\Debug\ZoomExample.pdb
 C:\Users\Mac\Desktop\HCI-master\ZoomExample\bin\Debug\RatingControlSample.dll
 C:\Users\Mac\Desktop\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.Properties.Resources.resources
 C:\Users\Mac\Desktop\HCI-master\ZoomExample\obj\x86\Debug\ZoomExample.csproj.GenerateResource.Cache
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\bin\Debug\RatingControlSample.dll
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\RatingControl.baml
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\RatingControl.g.cs
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample_Content.g.cs
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample_MarkupCompile.lref
