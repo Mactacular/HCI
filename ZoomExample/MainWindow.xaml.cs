@@ -17,7 +17,6 @@ namespace ZoomExample
         public MainWindow()
         {
             InitializeComponent();
-            System.Console.WriteLine("LOOK AT MEEEEE");
             System.Windows.Media.SolidColorBrush partiallyTransparentSolidColorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.LightBlue);
             partiallyTransparentSolidColorBrush.Opacity = 1.0;
             //scrollViewer.Background = partiallyTransparentSolidColorBrush;
@@ -74,6 +73,8 @@ namespace ZoomExample
 
         void cook_Click(object sender, RoutedEventArgs e)
         {
+            badStackPanel.Visibility = System.Windows.Visibility.Hidden;
+            border.Visibility = System.Windows.Visibility.Hidden;  
             Window1 win = new Window1();
             win.ShowDialog();
         }

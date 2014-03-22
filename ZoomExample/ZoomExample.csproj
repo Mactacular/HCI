@@ -151,12 +151,6 @@
     <Resource Include="turkey.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\default.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\background2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="star4.png" />
   </ItemGroup>
   <ItemGroup>
@@ -200,7 +194,11 @@
     <Resource Include="background3.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="b6.jpg" />
     <Content Include="RatingControlSample.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

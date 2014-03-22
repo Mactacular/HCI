@@ -4,7 +4,7 @@
     <Window.Background>
         <ImageBrush ImageSource="background2.jpg" />
     </Window.Background>
-    
+
     <Window.Resources>
         <ResourceDictionary>
             <Style TargetType="TextBlock">
@@ -44,6 +44,9 @@
                         <ScaleTransform x:Name="scaleTransform"/>
                     </TransformGroup>
                 </Grid.LayoutTransform>
+                <TextBlock Text="Categories" FontFamily="Calibri Bold" FontSize="55" Margin="60,-4,590,4" Width="345" Foreground="GhostWhite">
+                </TextBlock>
+                <TextBlock Text="Recipes" FontFamily="Calibri Bold" FontSize="55" Margin="462,-4,155,14" Width="378" Foreground="GhostWhite"/>
                 <Viewbox Grid.Row="0" Margin="10,86,590,-131">
                     <StackPanel Height="705">
                         <Image Source = "CATEGORY_Classic_Favourites.jpg"  HorizontalAlignment="Left" Height="105" VerticalAlignment="Top" Width="118" RenderTransformOrigin="0.5,0.5"/>
@@ -190,19 +193,19 @@
                     <Border Name ="border" Margin="0" Padding="3" Background="Ivory" Visibility="Hidden"
           BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
           VerticalAlignment="Top" Height="75">
-                        <StackPanel Name="badStackPanel" Height="48" Visibility="Visible" Background="Ivory">
-                            <TextBlock Text="Roast Turkey" HorizontalAlignment="Left"/>
-                            <TextBlock Text="Diffculty: HARD" HorizontalAlignment="Left"/>
-                            <TextBlock Text="Cook Time: 3 Hours" HorizontalAlignment="Left"/>
-                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left"/>
-                            <TextBlock Text="    -Butter" HorizontalAlignment="Left"/>
-                            <TextBlock Text="    -Carrots" HorizontalAlignment="Left"/>
-                            <TextBlock Text="    -Potatoes" HorizontalAlignment="Left"/>
-                            <TextBlock Text="    -Salt" HorizontalAlignment="Left"/>
-                            <TextBlock Text="    -Pepper" HorizontalAlignment="Left"/>
+                        <StackPanel Name="badStackPanel" Visibility="Visible" Background="Ivory" Margin="0,0,0,0">
+                            <TextBlock Text="Roast Turkey" HorizontalAlignment="Left" FontFamily="Arial" FontSize="5"/>
+                            <TextBlock Text="Diffculty: HARD" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="IndianRed"/>
+                            <TextBlock Text="Cook Time: 2 Hours" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkOrange"/>
+                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Butter" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Carrots" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Potatoes" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Salt" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Pepper" HorizontalAlignment="Left" FontFamily="Arial"  FontSize="3.5" Margin="0,0,0,19"/>
                             <WrapPanel Height="12">
-                                <Button Name="cook"  Content="Cook!" Height="8"/>
-                                <Button Name="noThx"  Content="No Thanks!" Height="8" Width="17"/>
+                                <Button Name="cook"  Content="Cook!" Height="8" FontSize="3"/>
+                                <Button Name="noThx"  Content="No Thanks" Height="8" Width="17" FontSize="2.5"/>
                             </WrapPanel>
                         </StackPanel>
                     </Border>

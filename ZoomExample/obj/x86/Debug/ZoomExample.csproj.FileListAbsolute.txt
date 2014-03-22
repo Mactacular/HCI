@@ -97,3 +97,10 @@ C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample_Co
 C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample_MarkupCompile.lref
 C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\bin\Debug\ZoomExample.exe.config
+C:\Users\Mac\Desktop\New folder\trunk\ZoomExample\bin\Debug\ZoomExample.exe.config
+C:\Users\Mac\Desktop\New folder\trunk\ZoomExample\bin\Debug\RatingControlSample.dll
+C:\Users\Mac\Desktop\New folder\trunk\ZoomExample\obj\x86\Debug\RatingControl.baml
+C:\Users\Mac\Desktop\New folder\trunk\ZoomExample\obj\x86\Debug\RatingControl.g.cs
+C:\Users\Mac\Desktop\New folder\trunk\ZoomExample\obj\x86\Debug\ZoomExample_Content.g.cs
+C:\Users\Mac\Desktop\New folder\trunk\ZoomExample\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Mac\Desktop\New folder\trunk\ZoomExample\obj\x86\Debug\ZoomExample_MarkupCompile.lref
