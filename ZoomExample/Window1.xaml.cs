@@ -47,7 +47,24 @@ namespace ZoomExample
             mySettings.Default.Notes = Notes.Text;
             mySettings.Default.Save();
         }
-       
+        private void showRecipe(object sender, RoutedEventArgs e)
+        {
+            recipeBox.Visibility = System.Windows.Visibility.Visible;
+            ingredientBox.Visibility = System.Windows.Visibility.Hidden;
+            reviewBox.Visibility = System.Windows.Visibility.Hidden;
+        }
+        private void showIngredients(object sender, RoutedEventArgs e)
+        {
+            recipeBox.Visibility = System.Windows.Visibility.Hidden;
+            ingredientBox.Visibility = System.Windows.Visibility.Visible;
+            reviewBox.Visibility = System.Windows.Visibility.Hidden;
+        }
+        private void showReview(object sender, RoutedEventArgs e)
+        {
+            recipeBox.Visibility = System.Windows.Visibility.Hidden;
+            ingredientBox.Visibility = System.Windows.Visibility.Hidden;
+            reviewBox.Visibility = System.Windows.Visibility.Visible;
+        }
 
     }
 }
