@@ -29,7 +29,7 @@
             <ColumnDefinition Width="758"/>
             <ColumnDefinition Width="293"/>
         </Grid.ColumnDefinitions>
-        <ScrollViewer Name="scrollViewer" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Hidden" Margin="-35,6,35,4" Grid.ColumnSpan="2">
+        <ScrollViewer Name="scrollViewer" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Hidden" Margin="-35,28,35,-18" Grid.ColumnSpan="2">
 
             <Grid Name="grid" Width="1024" Height="1896" RenderTransformOrigin="0.5,0.5">
                 <Grid.ColumnDefinitions>
@@ -189,8 +189,8 @@
                     </Viewbox.RenderTransform>
                     <Border Name ="border" Margin="0" Padding="3" Background="Ivory" Visibility="Hidden"
           BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
-          VerticalAlignment="Top" Height="56">
-                        <StackPanel Name="badStackPanel" Height="45" Visibility="Visible" Background="Ivory">
+          VerticalAlignment="Top" Height="75">
+                        <StackPanel Name="badStackPanel" Height="48" Visibility="Visible" Background="Ivory">
                             <TextBlock Text="Roast Turkey" HorizontalAlignment="Left"/>
                             <TextBlock Text="Diffculty: HARD" HorizontalAlignment="Left"/>
                             <TextBlock Text="Cook Time: 3 Hours" HorizontalAlignment="Left"/>
@@ -200,9 +200,9 @@
                             <TextBlock Text="    -Potatoes" HorizontalAlignment="Left"/>
                             <TextBlock Text="    -Salt" HorizontalAlignment="Left"/>
                             <TextBlock Text="    -Pepper" HorizontalAlignment="Left"/>
-                            <WrapPanel>
-                                <Button Name="cook"  Content="Cook!"/>
-                                <Button Name="noThx"  Content="No Thanks!"/>
+                            <WrapPanel Height="12">
+                                <Button Name="cook"  Content="Cook!" Height="8"/>
+                                <Button Name="noThx"  Content="No Thanks!" Height="8" Width="17"/>
                             </WrapPanel>
                         </StackPanel>
                     </Border>
