@@ -96,3 +96,4 @@ C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\RatingControl.
 C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample_Content.g.cs
 C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\obj\x86\Debug\ZoomExample_MarkupCompile.lref
+C:\Users\chrdaniel\Documents\GitHub\HCI\ZoomExample\bin\Debug\ZoomExample.exe.config

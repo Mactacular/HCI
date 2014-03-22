@@ -21,6 +21,7 @@ namespace ZoomExample
         public Window1()
         {
             InitializeComponent();
+            Notes.Text = mySettings.Default.Notes;
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
@@ -41,6 +42,12 @@ namespace ZoomExample
         {
 
         }
+        private void saveHandler(object sender, RoutedEventArgs e)
+        {
+            mySettings.Default.Notes = Notes.Text;
+            mySettings.Default.Save();
+        }
+       
 
     }
 }

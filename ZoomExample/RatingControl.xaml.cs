@@ -43,6 +43,8 @@ namespace RatingControlSample
                 else
                 {
                     SetValue(RatingValueProperty, value);
+                    Settings2.Default.Rating = value;
+                    Settings2.Default.Save();
                 }
             }
         }
@@ -72,6 +74,7 @@ namespace RatingControlSample
         public RatingControl()
         {
             InitializeComponent();
+            RatingValue = Settings2.Default.Rating;
         }
 
         private void RatingButtonClickEventHandler(Object sender, RoutedEventArgs e)
