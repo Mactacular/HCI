@@ -29,7 +29,7 @@
             <ColumnDefinition Width="758"/>
             <ColumnDefinition Width="293"/>
         </Grid.ColumnDefinitions>
-        <ScrollViewer Name="scrollViewer" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Hidden" Margin="-35,28,35,-18" Grid.ColumnSpan="2">
+        <ScrollViewer Name="scrollViewer" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Hidden" Margin="-33,28,43,-18" Grid.ColumnSpan="2">
 
             <Grid Name="grid" Width="1024" Height="1896" RenderTransformOrigin="0.5,0.5">
                 <Grid.ColumnDefinitions>
@@ -102,8 +102,8 @@
                                             </Style>
                                         </StackPanel.Resources>
                                         <Image Source = "Classic_Roast_Turkey.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" MouseUp = "btn11_Click"/>
-                                        <Image Source = "Roasted_Salmon_and_Asparagus.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Pizza_Magherita.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Roasted_Salmon_and_Asparagus.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" MouseUp = "btn12_Click"/>
+                                        <Image Source = "Pizza_Magherita.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" MouseUp = "btn13_Click"/>
                                     </StackPanel>
                                 </Viewbox>
                                 <Viewbox Grid.Column="0" Grid.Row="0" Margin="10,11,0,-10"/>
@@ -125,9 +125,9 @@
                                                 <Setter Property="Margin" Value="0,0,25,0"/>
                                             </Style>
                                         </StackPanel.Resources>
-                                        <Image Source = "Four_Cheese_Pizza.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Citrus_Shrimp_Skewers.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Grilled_Mac_and_Cheese.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Four_Cheese_Pizza.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" MouseUp = "btn21_Click"/>
+                                        <Image Source = "Citrus_Shrimp_Skewers.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" MouseUp = "btn22_Click"/>
+                                        <Image Source = "Grilled_Mac_and_Cheese.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" MouseUp = "btn23_Click"/>
                                     </StackPanel>
                                 </Viewbox>
                             </Grid>
@@ -148,9 +148,9 @@
                                                 <Setter Property="Margin" Value="0,0,25,0"/>
                                             </Style>
                                         </StackPanel.Resources>
-                                        <Image Source = "Spicy_Beef_Tacos.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Ginger_Chicken.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Pad_Kee_Mao.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Spicy_Beef_Tacos.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" MouseUp = "btn31_Click"/>
+                                        <Image Source = "Ginger_Chicken.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" MouseUp = "btn32_Click"/>
+                                        <Image Source = "Pad_Kee_Mao.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" MouseUp = "btn33_Click"/>
                                     </StackPanel>
                                 </Viewbox>
                             </Grid>
@@ -171,9 +171,9 @@
                                                 <Setter Property="Margin" Value="0,0,25,0"/>
                                             </Style>
                                         </StackPanel.Resources>
-                                        <Image Source = "Vanilla_Grapefruit_Cake.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Chocolate_Raspberry_Tart.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
-                                        <Image Source = "Cinnamon_Roll_Pancakes.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5"/>
+                                        <Image Source = "Vanilla_Grapefruit_Cake.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" MouseUp = "btn41_Click"/>
+                                        <Image Source = "Chocolate_Raspberry_Tart.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" MouseUp = "btn42_Click"/>
+                                        <Image Source = "Cinnamon_Roll_Pancakes.jpg" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.5,0.5" MouseUp = "btn43_Click"/>
                                     </StackPanel>
                                 </Viewbox>
                             </Grid>
@@ -181,21 +181,13 @@
                         </ScrollViewer>
                     </StackPanel>
                 </Viewbox>
-                <Viewbox Grid.Row="0" Margin="347,98,205,1530" RenderTransformOrigin="0.5,0.5">
-                    <Viewbox.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform AngleX="-0.424"/>
-                            <RotateTransform/>
-                            <TranslateTransform X="0.993"/>
-                        </TransformGroup>
-                    </Viewbox.RenderTransform>
-                    <Border Name ="border" Margin="0" Padding="3" Background="Ivory" Visibility="Hidden"
+                <Viewbox Grid.Row="0" Margin="303,66,249,1562" RenderTransformOrigin="0.5,0.5">
+                    <Border Name ="border" Margin="0,0,0,0" Padding="3" Background="Ivory" Visibility="Hidden" 
           BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
           VerticalAlignment="Top" Height="75">
-                        <StackPanel Name="badStackPanel" Visibility="Visible" Background="Ivory" Margin="0,0,0,0">
+                        <StackPanel  Name="badStackPanel" Visibility="Visible" Background="Ivory" Margin="0,0,0,0">
                             <TextBlock Text="Roast Turkey" HorizontalAlignment="Left" FontFamily="Arial" FontSize="5"/>
-                            <TextBlock Text="Diffculty: HARD" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="IndianRed"/>
+                            <TextBlock Text="Diffculty: Hard" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="IndianRed"/>
                             <TextBlock Text="Cook Time: 2 Hours" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkOrange"/>
                             <TextBlock Text="Ingredients:" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
                             <TextBlock Text="    -Butter" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
@@ -208,11 +200,241 @@
                                 <Button Name="noThx"  Content="No Thanks" Height="8" Width="17" FontSize="2.5"/>
                             </WrapPanel>
                         </StackPanel>
+                    </Border>                    
+                </Viewbox>
+                <Viewbox Grid.Row="0" Margin="303,66,249,1562" RenderTransformOrigin="0.5,0.5">
+                    <Border Name ="border1" Margin="0,0,0,0" Padding="3" Background="Ivory" Visibility="Hidden" 
+          BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
+          VerticalAlignment="Top" Height="75">
+                        <StackPanel  Name="badStackPanel1" Visibility="Visible" Background="Ivory" Margin="0,0,0,0">
+                            <TextBlock Text="Roast Salmon" HorizontalAlignment="Left" FontFamily="Arial" FontSize="5"/>
+                            <TextBlock Text="Diffculty: Medium" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkOrange"/>
+                            <TextBlock Text="Cook Time: 1 Hours" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkGreen"/>
+                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Salmon" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Asparagus" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Lemon" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Yellow Oninon" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Pepper" HorizontalAlignment="Left" FontFamily="Arial"  FontSize="3.5" Margin="0,0,0,19"/>
+                            <WrapPanel Height="12">
+                                <Button  Content="Cook!" Height="8" FontSize="3" Click="cook_Click"/>
+                                <Button  Content="No Thanks" Height="8" Width="17" FontSize="2.5" Click="noThx_Click"/>
+                            </WrapPanel>
+                        </StackPanel>
                     </Border>
                 </Viewbox>
-
+                <Viewbox Grid.Row="0" Margin="303,66,249,1562" RenderTransformOrigin="0.5,0.5">
+                    <Border Name ="border2" Margin="0,0,0,0" Padding="3" Background="Ivory" Visibility="Hidden" 
+          BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
+          VerticalAlignment="Top" Height="75">
+                        <StackPanel  Name="badStackPanel2" Visibility="Visible" Background="Ivory" Margin="0,0,0,0">
+                            <TextBlock Text=" Piazza Magherita" HorizontalAlignment="Left" FontFamily="Arial" FontSize="5"/>
+                            <TextBlock Text="Diffculty: Medium" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkOrange"/>
+                            <TextBlock Text="Cook Time: 3 Hours" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="IndianRed"/>
+                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Flour" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Eggs" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Basil" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Cheese" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Tomatos" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Tomatoe Paste" HorizontalAlignment="Left" FontFamily="Arial"  FontSize="3.5" Margin="0,0,0,15"/>
+                            <WrapPanel Height="12">
+                                <Button  Content="Cook!" Height="8" FontSize="3" Click="cook_Click"/>
+                                <Button  Content="No Thanks" Height="8" Width="17" FontSize="2.5" Click="noThx_Click"/>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+                </Viewbox>
+                <Viewbox Grid.Row="0" Margin="303,354,249,1274" RenderTransformOrigin="0.5,0.5">
+                    <Border Name ="border3" Margin="0,0,0,0" Padding="3" Background="Ivory" Visibility="Hidden" 
+          BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
+          VerticalAlignment="Top" Height="75">
+                        <StackPanel  Name="badStackPanel3" Visibility="Visible" Background="Ivory" Margin="0,0,0,0">
+                            <TextBlock Text="Four Cheese Pizza" HorizontalAlignment="Left" FontFamily="Arial" FontSize="5"/>
+                            <TextBlock Text="Diffculty: Medium" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkOrange"/>
+                            <TextBlock Text="Cook Time: 3 Hours" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="IndianRed"/>
+                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Flour" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Tomato Paste" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Tomato" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Cheese" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Eggs" HorizontalAlignment="Left" FontFamily="Arial"  FontSize="3.5" Margin="0,0,0,19"/>
+                            <WrapPanel Height="12">
+                                <Button  Content="Cook!" Height="8" FontSize="3" Click="cook_Click"/>
+                                <Button  Content="No Thanks" Height="8" Width="17" FontSize="2.5" Click="noThx_Click"/>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+                </Viewbox>
+                <Viewbox Grid.Row="0" Margin="293,358,259,1270" RenderTransformOrigin="0.5,0.5">
+                    <Border Name ="border4" Margin="0,0,0,0" Padding="3" Background="Ivory" Visibility="Hidden" 
+          BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
+          VerticalAlignment="Top" Height="75">
+                        <StackPanel  Name="badStackPanel4" Visibility="Visible" Background="Ivory" Margin="0,0,0,0">
+                            <TextBlock Text="Citrus Shrimp" HorizontalAlignment="Left" FontFamily="Arial" FontSize="5"/>
+                            <TextBlock Text="Diffculty: Easy" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkGreen"/>
+                            <TextBlock Text="Cook Time: 1 Hours" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkGreen"/>
+                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Shrimp" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Zucchini" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Lemons" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Limes" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Rice" HorizontalAlignment="Left" FontFamily="Arial"  FontSize="3.5" Margin="0,0,0,19"/>
+                            <WrapPanel Height="12">
+                                <Button  Content="Cook!" Height="8" FontSize="3" Click="cook_Click"/>
+                                <Button  Content="No Thanks" Height="8" Width="17" FontSize="2.5" Click="noThx_Click"/>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+                </Viewbox>
+                <Viewbox Grid.Row="0" Margin="293,356,259,1272" RenderTransformOrigin="0.5,0.5">
+                    <Border Name ="border5" Margin="0,0,0,0" Padding="3" Background="Ivory" Visibility="Hidden" 
+          BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
+          VerticalAlignment="Top" Height="75">
+                        <StackPanel  Name="badStackPanel5" Visibility="Visible" Background="Ivory">
+                            <TextBlock Text="Grilled Cheese" HorizontalAlignment="Left" FontFamily="Arial" FontSize="5"/>
+                            <TextBlock Text="Diffculty: Easy" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkGreen"/>
+                            <TextBlock Text="Cook Time: 30 Minutes" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkGreen"/>
+                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Bread" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Cheese" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Butter" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Tomato Soup" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -MORE CHEESE" HorizontalAlignment="Left" FontFamily="Arial"  FontSize="3.5" Margin="0,0,0,19"/>
+                            <WrapPanel Height="12">
+                                <Button  Content="Cook!" Height="8" FontSize="3" Click="cook_Click"/>
+                                <Button  Content="No Thanks" Height="8" Width="17" FontSize="2.5" Click="noThx_Click"/>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+                </Viewbox>
+                <Viewbox Grid.Row="0" Margin="303,639,249,989" RenderTransformOrigin="0.5,0.5">
+                    <Border Name ="border6" Margin="0,0,0,0" Padding="3" Background="Ivory" Visibility="Hidden" 
+          BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
+          VerticalAlignment="Top" Height="75">
+                        <StackPanel  Name="badStackPanel6" Visibility="Visible" Background="Ivory" Margin="0,0,0,0">
+                            <TextBlock Text="Beef Tacos" HorizontalAlignment="Left" FontFamily="Arial" FontSize="5"/>
+                            <TextBlock Text="Diffculty: Medium" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkOrange"/>
+                            <TextBlock Text="Cook Time: 2 Hours" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkOrange"/>
+                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Beef" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Tortillas" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Mexican Spices" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Lettuce" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Tomato" HorizontalAlignment="Left" FontFamily="Arial"  FontSize="3.5" Margin="0,0,0,19"/>
+                            <WrapPanel Height="12">
+                                <Button  Content="Cook!" Height="8" FontSize="3" Click="cook_Click"/>
+                                <Button  Content="No Thanks" Height="8" Width="17" FontSize="2.5" Click="noThx_Click"/>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+                </Viewbox>
+                <Viewbox Grid.Row="0" Margin="303,639,249,989" RenderTransformOrigin="0.5,0.5">
+                    <Border Name ="border7" Margin="0,0,0,0" Padding="3" Background="Ivory" Visibility="Hidden" 
+          BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
+          VerticalAlignment="Top" Height="75">
+                        <StackPanel  Name="badStackPanel7" Visibility="Visible" Background="Ivory" Margin="0,0,0,0">
+                            <TextBlock Text="Ginger Chicken" HorizontalAlignment="Left" FontFamily="Arial" FontSize="5"/>
+                            <TextBlock Text="Diffculty: Medium" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkOrange"/>
+                            <TextBlock Text="Cook Time: 2 Hours" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkOrange"/>
+                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Chicken" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Flour" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Oil" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Oyster Sauce" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Honey" HorizontalAlignment="Left" FontFamily="Arial"  FontSize="3.5" Margin="0,0,0,19"/>
+                            <WrapPanel Height="12">
+                                <Button  Content="Cook!" Height="8" FontSize="3" Click="cook_Click"/>
+                                <Button  Content="No Thanks" Height="8" Width="17" FontSize="2.5" Click="noThx_Click"/>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+                </Viewbox>
+                <Viewbox Grid.Row="0" Margin="303,639,249,989" RenderTransformOrigin="0.5,0.5">
+                    <Border Name ="border8" Margin="0,0,0,0" Padding="3" Background="Ivory" Visibility="Hidden" 
+          BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
+          VerticalAlignment="Top" Height="75">
+                        <StackPanel  Name="badStackPanel8" Visibility="Visible" Background="Ivory" Margin="0,0,0,0">
+                            <TextBlock Text="Pad Mee Kao" HorizontalAlignment="Left" FontFamily="Arial" FontSize="5"/>
+                            <TextBlock Text="Diffculty: Hard" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="IndianRed"/>
+                            <TextBlock Text="Cook Time: 3 Hours" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="IndianRed"/>
+                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Chicken" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Noodles" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Bell Peppers" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Hot Chilis" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Soy Sauce" HorizontalAlignment="Left" FontFamily="Arial"  FontSize="3.5" Margin="0,0,0,19"/>
+                            <WrapPanel Height="12">
+                                <Button  Content="Cook!" Height="8" FontSize="3" Click="cook_Click"/>
+                                <Button  Content="No Thanks" Height="8" Width="17" FontSize="2.5" Click="noThx_Click"/>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+                </Viewbox>
+                <Viewbox Grid.Row="0" Margin="303,929,249,699" RenderTransformOrigin="0.5,0.5">
+                    <Border Name ="border9" Margin="0,0,0,0" Padding="3" Background="Ivory" Visibility="Hidden" 
+          BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
+          VerticalAlignment="Top" Height="75">
+                        <StackPanel  Name="badStackPanel9" Visibility="Visible" Background="Ivory" Margin="0,0,0,0">
+                            <TextBlock Text="Grapefruit Cake" HorizontalAlignment="Left" FontFamily="Arial" FontSize="5"/>
+                            <TextBlock Text="Diffculty: Hard" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="IndianRed"/>
+                            <TextBlock Text="Cook Time: 4 Hours" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="IndianRed"/>
+                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Flour" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Eggs" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Sugar" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Grapefruit" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Vanilla Extract" HorizontalAlignment="Left" FontFamily="Arial"  FontSize="3.5" Margin="0,0,0,19"/>
+                            <WrapPanel Height="12">
+                                <Button  Content="Cook!" Height="8" FontSize="3" Click="cook_Click"/>
+                                <Button  Content="No Thanks" Height="8" Width="17" FontSize="2.5" Click="noThx_Click"/>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+                </Viewbox>
+                <Viewbox Grid.Row="0" Margin="303,929,249,699" RenderTransformOrigin="0.5,0.5">
+                    <Border Name ="border10" Margin="0,0,0,0" Padding="3" Background="Ivory" Visibility="Hidden" 
+          BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
+          VerticalAlignment="Top" Height="75">
+                        <StackPanel  Name="badStackPanel10" Visibility="Visible" Background="Ivory" Margin="0,0,0,0">
+                            <TextBlock Text="Rasberry Tart" HorizontalAlignment="Left" FontFamily="Arial" FontSize="5"/>
+                            <TextBlock Text="Diffculty: Hard" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="IndianRed"/>
+                            <TextBlock Text="Cook Time: 4 Hours" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="IndianRed"/>
+                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Flour" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Eggs" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Sugar" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Chocolate" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Rasberries" HorizontalAlignment="Left" FontFamily="Arial"  FontSize="3.5" Margin="0,0,0,19"/>
+                            <WrapPanel Height="12">
+                                <Button  Content="Cook!" Height="8" FontSize="3" Click="cook_Click"/>
+                                <Button  Content="No Thanks" Height="8" Width="17" FontSize="2.5" Click="noThx_Click"/>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+                </Viewbox>
+                <Viewbox Grid.Row="0" Margin="303,929,249,699" RenderTransformOrigin="0.5,0.5">
+                    <Border Name ="border11" Margin="0,0,0,0" Padding="3" Background="Ivory" Visibility="Hidden" 
+          BorderBrush="SlateGray" BorderThickness="1,1.5,1,1.5" CornerRadius="3"
+          VerticalAlignment="Top" Height="75">
+                        <StackPanel  Name="badStackPanel11" Visibility="Visible" Background="Ivory" Margin="0,0,0,0">
+                            <TextBlock Text="Cinnamon Pancake" HorizontalAlignment="Left" FontFamily="Arial" FontSize="5"/>
+                            <TextBlock Text="Diffculty: Easy" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkGreen"/>
+                            <TextBlock Text="Cook Time: 1 Hour" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5" Foreground="DarkGreen"/>
+                            <TextBlock Text="Ingredients:" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Flour" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Eggs" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Sugar" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Cinnamon" HorizontalAlignment="Left" FontFamily="Arial" FontSize="3.5"/>
+                            <TextBlock Text="    -Syrup" HorizontalAlignment="Left" FontFamily="Arial"  FontSize="3.5" Margin="0,0,0,19"/>
+                            <WrapPanel Height="12">
+                                <Button  Content="Cook!" Height="8" FontSize="3" Click="cook_Click"/>
+                                <Button  Content="No Thanks" Height="8" Width="17" FontSize="2.5" Click="noThx_Click"/>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
+                </Viewbox>
             </Grid>
-
         </ScrollViewer>
     </Grid>
 </Window>

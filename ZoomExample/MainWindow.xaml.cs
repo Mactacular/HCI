@@ -24,7 +24,7 @@ namespace ZoomExample
             //myBrush.ImageSource = new System.Windows.Media.Imaging.BitmapImage(new System.Uri(@"Resources/background2.jpg", System.UriKind.Relative));
             //scrollViewer.Background = myBrush;
             //partiallyTransparentSolidColorBrush = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.);
-            //partiallyTransparentSolidColorBrush.Opacity = 0.3;
+            //partiallyTransparentSolidColorBrush.Opacity = 0.2;
             //leftStackPanel.Background = partiallyTransparentSolidColorBrush;
             //badStackPanel.Background = partiallyTransparentSolidColorBrush;
             //scrollViewer2.Background = partiallyTransparentSolidColorBrush;
@@ -68,13 +68,57 @@ namespace ZoomExample
         void noThx_Click(object sender, RoutedEventArgs e)
         {
             badStackPanel.Visibility = System.Windows.Visibility.Hidden;
-            border.Visibility = System.Windows.Visibility.Hidden;  
+            border.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel1.Visibility = System.Windows.Visibility.Hidden;
+            border1.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel2.Visibility = System.Windows.Visibility.Hidden;
+            border2.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel3.Visibility = System.Windows.Visibility.Hidden;
+            border3.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel4.Visibility = System.Windows.Visibility.Hidden;
+            border4.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel5.Visibility = System.Windows.Visibility.Hidden;
+            border5.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel6.Visibility = System.Windows.Visibility.Hidden;
+            border6.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel7.Visibility = System.Windows.Visibility.Hidden;
+            border7.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel8.Visibility = System.Windows.Visibility.Hidden;
+            border8.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel9.Visibility = System.Windows.Visibility.Hidden;
+            border9.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel10.Visibility = System.Windows.Visibility.Hidden;
+            border10.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel11.Visibility = System.Windows.Visibility.Hidden;
+            border11.Visibility = System.Windows.Visibility.Hidden;  
         }
 
         void cook_Click(object sender, RoutedEventArgs e)
         {
             badStackPanel.Visibility = System.Windows.Visibility.Hidden;
-            border.Visibility = System.Windows.Visibility.Hidden;  
+            border.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel1.Visibility = System.Windows.Visibility.Hidden;
+            border1.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel2.Visibility = System.Windows.Visibility.Hidden;
+            border2.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel3.Visibility = System.Windows.Visibility.Hidden;
+            border3.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel4.Visibility = System.Windows.Visibility.Hidden;
+            border4.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel5.Visibility = System.Windows.Visibility.Hidden;
+            border5.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel6.Visibility = System.Windows.Visibility.Hidden;
+            border6.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel7.Visibility = System.Windows.Visibility.Hidden;
+            border7.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel8.Visibility = System.Windows.Visibility.Hidden;
+            border8.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel9.Visibility = System.Windows.Visibility.Hidden;
+            border9.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel10.Visibility = System.Windows.Visibility.Hidden;
+            border10.Visibility = System.Windows.Visibility.Hidden;
+            badStackPanel11.Visibility = System.Windows.Visibility.Hidden;
+            border11.Visibility = System.Windows.Visibility.Hidden;
             Window1 win = new Window1();
             win.ShowDialog();
         }
@@ -183,6 +227,7 @@ namespace ZoomExample
 
         void OnMouseLeftButtonDown2(object sender, MouseButtonEventArgs e)
         {
+            timer = System.DateTime.Now;
             var mousePos = e.GetPosition(scrollViewer2);
             if (mousePos.X <= scrollViewer2.ViewportWidth && mousePos.Y < scrollViewer2.ViewportHeight) //make sure we still can use the scrollbars
             {
@@ -271,6 +316,7 @@ namespace ZoomExample
 
         void OnMouseLeftButtonDown3(object sender, MouseButtonEventArgs e)
         {
+            timer = System.DateTime.Now;
             var mousePos = e.GetPosition(scrollViewer3);
             if (mousePos.X <= scrollViewer3.ViewportWidth) //make sure we still can use the scrollbars
             {
@@ -359,6 +405,7 @@ namespace ZoomExample
 
         void OnMouseLeftButtonDown4(object sender, MouseButtonEventArgs e)
         {
+            timer = System.DateTime.Now;
             var mousePos = e.GetPosition(scrollViewer4);
             if (mousePos.X <= scrollViewer4.ViewportWidth) //make sure we still can use the scrollbars
             {
@@ -433,28 +480,123 @@ namespace ZoomExample
 
         private void btn11_Click(object sender, RoutedEventArgs e)
         {
-            //numClicks = numClicks + 1;
-            //if (numClicks == 2)
-            //{
                 System.DateTime timeout = System.DateTime.Now;
-                if ((timeout - timer).TotalSeconds < 0.5)
+                if ((timeout - timer).TotalSeconds < 0.2)
                 {
-                    //System.Console.WriteLine("BUTTON PUSHED");
                     badStackPanel.Visibility = System.Windows.Visibility.Visible;
                     border.Visibility = System.Windows.Visibility.Visible;
-                   // Window1 win = new Window1();
-                    //win.ShowDialog();
                     numClicks = 0;
                 }
-                else
-                {
-                    numClicks = 0;
-                }
-            //}
-            //else
-            //{
-              //  timer = System.DateTime.Now;
-            //}
+        }
+        private void btn12_Click(object sender, RoutedEventArgs e)
+        {
+            System.DateTime timeout = System.DateTime.Now;
+            if ((timeout - timer).TotalSeconds < 0.2)
+            {
+                badStackPanel1.Visibility = System.Windows.Visibility.Visible;
+                border1.Visibility = System.Windows.Visibility.Visible;
+                numClicks = 0;
+            }
+        }
+        private void btn13_Click(object sender, RoutedEventArgs e)
+        {
+            System.DateTime timeout = System.DateTime.Now;
+            if ((timeout - timer).TotalSeconds < 0.2)
+            {
+                badStackPanel2.Visibility = System.Windows.Visibility.Visible;
+                border2.Visibility = System.Windows.Visibility.Visible;
+                numClicks = 0;
+            }
+        }
+        private void btn21_Click(object sender, RoutedEventArgs e)
+        {
+            System.DateTime timeout = System.DateTime.Now;
+            if ((timeout - timer).TotalSeconds < 0.2)
+            {
+                badStackPanel3.Visibility = System.Windows.Visibility.Visible;
+                border3.Visibility = System.Windows.Visibility.Visible;
+                numClicks = 0;
+            }
+        }
+        private void btn22_Click(object sender, RoutedEventArgs e)
+        {
+            System.DateTime timeout = System.DateTime.Now;
+            if ((timeout - timer).TotalSeconds < 0.2)
+            {
+                badStackPanel4.Visibility = System.Windows.Visibility.Visible;
+                border4.Visibility = System.Windows.Visibility.Visible;
+                numClicks = 0;
+            }
+        }
+        private void btn23_Click(object sender, RoutedEventArgs e)
+        {
+            System.DateTime timeout = System.DateTime.Now;
+            if ((timeout - timer).TotalSeconds < 0.2)
+            {
+                badStackPanel5.Visibility = System.Windows.Visibility.Visible;
+                border5.Visibility = System.Windows.Visibility.Visible;
+                numClicks = 0;
+            }
+        }
+        private void btn31_Click(object sender, RoutedEventArgs e)
+        {
+            System.DateTime timeout = System.DateTime.Now;
+            if ((timeout - timer).TotalSeconds < 0.2)
+            {
+                badStackPanel6.Visibility = System.Windows.Visibility.Visible;
+                border6.Visibility = System.Windows.Visibility.Visible;
+                numClicks = 0;
+            }
+        }
+        private void btn32_Click(object sender, RoutedEventArgs e)
+        {
+            System.DateTime timeout = System.DateTime.Now;
+            if ((timeout - timer).TotalSeconds < 0.2)
+            {
+                badStackPanel7.Visibility = System.Windows.Visibility.Visible;
+                border7.Visibility = System.Windows.Visibility.Visible;
+                numClicks = 0;
+            }
+        }
+        private void btn33_Click(object sender, RoutedEventArgs e)
+        {
+            System.DateTime timeout = System.DateTime.Now;
+            if ((timeout - timer).TotalSeconds < 0.2)
+            {
+                badStackPanel8.Visibility = System.Windows.Visibility.Visible;
+                border8.Visibility = System.Windows.Visibility.Visible;
+                numClicks = 0;
+            }
+        }
+        private void btn41_Click(object sender, RoutedEventArgs e)
+        {
+            System.DateTime timeout = System.DateTime.Now;
+            if ((timeout - timer).TotalSeconds < 0.2)
+            {
+                badStackPanel9.Visibility = System.Windows.Visibility.Visible;
+                border9.Visibility = System.Windows.Visibility.Visible;
+                numClicks = 0;
+            }
+        }
+        private void btn42_Click(object sender, RoutedEventArgs e)
+        {
+            System.DateTime timeout = System.DateTime.Now;
+            if ((timeout - timer).TotalSeconds < 0.2)
+            {
+                badStackPanel10.Visibility = System.Windows.Visibility.Visible;
+                border10.Visibility = System.Windows.Visibility.Visible;
+                numClicks = 0;
+            }
+        }
+        private void btn43_Click(object sender, RoutedEventArgs e)
+        {
+            System.DateTime timeout = System.DateTime.Now;
+            if ((timeout - timer).TotalSeconds < 0.2)
+            {
+                badStackPanel11.Visibility = System.Windows.Visibility.Visible;
+                border11.Visibility = System.Windows.Visibility.Visible;
+                numClicks = 0;
+            }
         }
     }
 
